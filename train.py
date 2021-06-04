@@ -1,6 +1,7 @@
 from tools import LR
 import sys
 
+
 def main():
     learningRate = 0.5
     iterations = 500
@@ -9,5 +10,6 @@ def main():
     LR.GD(milages, prices, learningRate, iterations)
     print(milages)
 
-if	__name__ == '__main__':
-	main()
+
+if __name__ == '__main__':
+    main()
