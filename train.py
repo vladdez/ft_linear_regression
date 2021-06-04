@@ -4,11 +4,12 @@ import sys
 
 def main():
     learningRate = 0.5
-    iterations = 500
+    epochs = 500
 
     milages, prices = LR.get_data(sys.argv[1])
-    LR.GD(milages, prices, learningRate, iterations)
-    print(milages)
+    #print(milages)
+    LR.GD(milages, prices, learningRate, epochs)
+    
 
 
 if __name__ == '__main__':
